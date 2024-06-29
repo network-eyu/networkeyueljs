@@ -2,12 +2,12 @@ const crypto = require('crypto')
 const NodeRSA = require('node-rsa')
 const axios = require('axios')
 
-const TELEBIRR_H5_URL =
+const NETWORKEYUEL_H5_URL =
   'https://app.ethiomobilemoney.et:2121/ammapi/payment/service-openup/toTradeWebPay'
-const TELEBIRR_IN_APP_URL =
+const NETWORKEYUEL_IN_APP_URL =
   'https://app.ethiomobilemoney.et:2121/ammapi/payment/service-openup/toTradeMobilePay'
 
-class Telebirr {
+class NetworkEyuel {
   constructor({ appId, appKey, shortCode, publicKey }) {
     this.appId = appId
     this.appKey = appKey
@@ -43,7 +43,7 @@ class Telebirr {
       totalAmount,
     }
 
-    const url = paymentMethod == 'app' ? TELEBIRR_IN_APP_URL : TELEBIRR_H5_URL
+    const url = paymentMethod == 'app' ? NetworkEyuel_IN_APP_URL : NetworkEyuel_H5_URL
 
     const payload = {
       appid: this.appId,
