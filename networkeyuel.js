@@ -98,4 +98,4 @@ class NetworkEyuel {
   }
 }
 
-module.exports = Telebirr
+module.exports = NetworkEyuel
