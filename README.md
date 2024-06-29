@@ -1,21 +1,21 @@
-# telebirrjs
+# networkeyuel.js
 
-hustle free telebirr integration package for node
+hustle free NetworkEyuel integration package for node
 
 ## Usage
 
-install the package `npm i telebirrjs`
+install the package `npm i networkeyuel.js`
 
 ```javascript
-const Telebirr = require('telebirrjs')
+const NetworkEyuel = require('networkeyuel.js')
 
-const telebirr = new Telebirr({
-  appId: 'YOUR TELEBIRR APP ID',
-  appKey: 'YOUR TELEBIRR APP KEY',
-  shortCode: 'TELEBIRR SHORT CODE',
-  publicKey: 'YOUR TELEBIRR PUBLIC KEY',
+const networkeyuel = new NetworkEyuel({
+  appId: 'YOUR NetworkEyuel APP ID',
+  appKey: 'YOUR NetworkEyuel APP KEY',
+  shortCode: 'NetworkEyuel SHORT CODE',
+  publicKey: 'YOUR NetworkEyuel PUBLIC KEY',
 })
-const { success, response } = await telebirr.makePayment({
+const { success, response } = await networkeyuel.makePayment({
   paymentMethod: 'web | app',
   nonce: 'a unique random string ( should be unique for each request )',
   notifyUrl: 'callback url for payment confirmation',
@@ -46,5 +46,5 @@ const {
   tradeNo,
   tradeStatus,
   transactionNo,
-} = telebirr.getDecryptedCallbackNotification(encryptedTextFromTelebirr)
+} = networkeyuel.getDecryptedCallbackNotification(encryptedTextFromTelebirr)
 ```
