@@ -1,27 +1,27 @@
 {
-  "name": "telebirrjs",
+  "name": "networkeyueljs",
   "version": "1.2.0",
   "description": "",
   "keywords": [
-    "telebirr",
+    "networkeyuel",
     "payment",
     "fintech",
     "ethiopia"
   ],
-  "main": "telebirr.js",
+  "main": "networkeyuel.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vernu/telebirrjs.git"
+    "url": "git+https://github.com/networkeyuel/networkeyueljs.git"
   },
-  "author": "@vernu",
+  "author": "@network-eyu",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/vernu/telebirrjs/issues"
+    "url": "https://github.com/networkeyuel/networkeyueljs/issues"
   },
-  "homepage": "https://github.com/vernu/telebirrjs#readme",
+  "homepage": "https://github.com/networkeyuel/networkeyueljs#readme",
   "dependencies": {
     "axios": "^0.27.2",
     "node-rsa": "^1.1.1"
